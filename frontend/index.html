@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradutor DeepL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tradutor com DeepL API</h1>
+
+    <textarea id="inputText" placeholder="Digite o texto a ser traduzido..."></textarea>
+
+    <select id="langSelect">
+      <option value="EN">Inglês</option>
+      <option value="PT">Português</option>
+      <option value="ES">Espanhol</option>
+      <option value="FR">Francês</option>
+    </select>
+
+    <button onclick="traduzir()">Traduzir</button>
+
+    <textarea id="outputText" readonly placeholder="Tradução aparecerá aqui..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
