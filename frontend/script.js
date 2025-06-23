@@ -3,7 +3,7 @@ async function traduzir() {
   const targetLang = document.getElementById("langSelect").value;
 
   try {
-    const response = await fetch("http://localhost:3000/traduzir", {
+    const response = await fetch("wss://tradutor-backend.onrender.com/traduzir", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
